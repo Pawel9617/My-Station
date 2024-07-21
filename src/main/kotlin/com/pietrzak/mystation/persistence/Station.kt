@@ -6,8 +6,9 @@ import jakarta.persistence.*
 @Table(name = "Station")
 data class Station (
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    val stationId: Long,
-    val stationName: String
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val stationId: Long?,
+    val stationName: String,
+    val maxPower: Int
 ){
 }

@@ -1,0 +1,10 @@
+### Add station
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "station": {
+    "stationName": "ABC",
+    "maxPower": 20
+  }
+}
